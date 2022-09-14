@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"2_push_boton_led\stm32f3xx_hal_i2c.o"
+"2_push_boton_led\stm32f3xx_hal_tim_ex.o"
+"2_push_boton_led\stm32f3xx_hal_dma.o"
+"2_push_boton_led\stm32f3xx_hal_pwr_ex.o"
+"2_push_boton_led\stm32f3xx_hal_rcc_ex.o"
+"2_push_boton_led\stm32f3xx_hal_cortex.o"
+"2_push_boton_led\stm32f3xx_hal_flash.o"
+"2_push_boton_led\stm32f3xx_hal_rcc.o"
+"2_push_boton_led\stm32f3xx_hal_gpio.o"
+"2_push_boton_led\stm32f3xx_hal_flash_ex.o"
+"2_push_boton_led\stm32f3xx_hal_tim.o"
+"2_push_boton_led\stm32f3xx_hal.o"
+"2_push_boton_led\stm32f3xx_hal_i2c_ex.o"
+"2_push_boton_led\stm32f3xx_hal_pwr.o"
+"2_push_boton_led\system_stm32f3xx.o"
+"2_push_boton_led\stm32f3xx_it.o"
+"2_push_boton_led\stm32f3xx_hal_msp.o"
+"2_push_boton_led\main.o"
+"2_push_boton_led\gpio.o"
+"2_push_boton_led\startup_stm32f303xc.o"
+--library_type=microlib --strict --scatter "2_PUSH_BOTON_LED\2_PUSH_BOTON_LED.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "2_PUSH_BOTON_LED.map" -o 2_PUSH_BOTON_LED\2_PUSH_BOTON_LED.axf

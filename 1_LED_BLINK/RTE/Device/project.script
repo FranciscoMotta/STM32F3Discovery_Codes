@@ -1,0 +1,6 @@
+load STM32F303VCTx 
+project name STCubeGenerated 
+project toolchain "MDK-ARM V5" 
+project path "D:\Escritorio\STM32Discovery\1_LED_BLINK\RTE\Device\STM32F303VCTx\" 
+set tpl_path "C:\Users\jmott\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.2.2\MDK\CubeMX" 
+set dest_path "STM32F303VCTx" 
