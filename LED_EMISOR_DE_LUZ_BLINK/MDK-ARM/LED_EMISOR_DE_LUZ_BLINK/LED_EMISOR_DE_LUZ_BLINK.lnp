@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"led_emisor_de_luz_blink\system_stm32f3xx.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_tim.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_flash_ex.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_gpio.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_rcc_ex.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_i2c.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_tim_ex.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_pwr_ex.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_rcc.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_flash.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_i2c_ex.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_pwr.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_dma.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_cortex.o"
+"led_emisor_de_luz_blink\startup_stm32f303xc.o"
+"led_emisor_de_luz_blink\gpio.o"
+"led_emisor_de_luz_blink\stm32f3xx_hal_msp.o"
+"led_emisor_de_luz_blink\stm32f3xx_it.o"
+"led_emisor_de_luz_blink\main.o"
+--library_type=microlib --strict --scatter "LED_EMISOR_DE_LUZ_BLINK\LED_EMISOR_DE_LUZ_BLINK.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_EMISOR_DE_LUZ_BLINK.map" -o LED_EMISOR_DE_LUZ_BLINK\LED_EMISOR_DE_LUZ_BLINK.axf

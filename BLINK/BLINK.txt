@@ -1,0 +1,49 @@
+Configuration	BLINK
+STM32CubeMX 	4.23.0
+Date	09/13/2022
+MCU	STM32F303VCTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+39	PE8	GPIO_Output	LED1
+40	PE9	GPIO_Output	LED2
+41	PE10	GPIO_Output	LED3
+42	PE11	GPIO_Output	LED4
+72	PA13	SYS_JTMS-SWDIO	
+76	PA14	SYS_JTCK-SWCLK	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : BLINK
+Project Folder : D:\Escritorio\STM32Discovery\BLINK
+Toolchain / IDE : EWARM
+Firmware Package Name and Version : STM32Cube FW_F3 V1.9.1
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
