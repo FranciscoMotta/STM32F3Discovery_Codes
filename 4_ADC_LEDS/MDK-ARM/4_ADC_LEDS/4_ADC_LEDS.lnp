@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"4_adc_leds\startup_stm32f303xc.o"
+"4_adc_leds\system_stm32f3xx.o"
+"4_adc_leds\stm32f3xx_hal_adc_ex.o"
+"4_adc_leds\stm32f3xx_hal_gpio.o"
+"4_adc_leds\stm32f3xx_hal_tim_ex.o"
+"4_adc_leds\stm32f3xx_hal_tim.o"
+"4_adc_leds\stm32f3xx_hal.o"
+"4_adc_leds\stm32f3xx_hal_pwr.o"
+"4_adc_leds\stm32f3xx_hal_cortex.o"
+"4_adc_leds\stm32f3xx_hal_adc.o"
+"4_adc_leds\stm32f3xx_hal_rcc.o"
+"4_adc_leds\stm32f3xx_hal_flash_ex.o"
+"4_adc_leds\stm32f3xx_hal_i2c_ex.o"
+"4_adc_leds\stm32f3xx_hal_rcc_ex.o"
+"4_adc_leds\stm32f3xx_hal_dma.o"
+"4_adc_leds\stm32f3xx_hal_pwr_ex.o"
+"4_adc_leds\stm32f3xx_hal_i2c.o"
+"4_adc_leds\stm32f3xx_hal_flash.o"
+"4_adc_leds\gpio.o"
+"4_adc_leds\adc.o"
+"4_adc_leds\stm32f3xx_hal_msp.o"
+"4_adc_leds\main.o"
+"4_adc_leds\stm32f3xx_it.o"
+--library_type=microlib --strict --scatter "4_ADC_LEDS\4_ADC_LEDS.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "4_ADC_LEDS.map" -o 4_ADC_LEDS\4_ADC_LEDS.axf
