@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"3_push_leds_round\system_stm32f3xx.o"
+"3_push_leds_round\startup_stm32f303xc.o"
+"3_push_leds_round\stm32f3xx_hal_msp.o"
+"3_push_leds_round\stm32f3xx_it.o"
+"3_push_leds_round\gpio.o"
+"3_push_leds_round\main.o"
+"3_push_leds_round\stm32f3xx_hal_pwr.o"
+"3_push_leds_round\stm32f3xx_hal_dma.o"
+"3_push_leds_round\stm32f3xx_hal_cortex.o"
+"3_push_leds_round\stm32f3xx_hal_flash_ex.o"
+"3_push_leds_round\stm32f3xx_hal_flash.o"
+"3_push_leds_round\stm32f3xx_hal_gpio.o"
+"3_push_leds_round\stm32f3xx_hal_tim_ex.o"
+"3_push_leds_round\stm32f3xx_hal_pwr_ex.o"
+"3_push_leds_round\stm32f3xx_hal.o"
+"3_push_leds_round\stm32f3xx_hal_i2c_ex.o"
+"3_push_leds_round\stm32f3xx_hal_tim.o"
+"3_push_leds_round\stm32f3xx_hal_rcc_ex.o"
+"3_push_leds_round\stm32f3xx_hal_i2c.o"
+"3_push_leds_round\stm32f3xx_hal_rcc.o"
+--library_type=microlib --strict --scatter "3_PUSH_LEDS_ROUND\3_PUSH_LEDS_ROUND.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "3_PUSH_LEDS_ROUND.map" -o 3_PUSH_LEDS_ROUND\3_PUSH_LEDS_ROUND.axf
