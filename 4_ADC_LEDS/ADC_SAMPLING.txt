@@ -1,0 +1,6 @@
+8MHZ/4 = 2MHZ <- frecuencia después del preescalador
+
+Tiempo_conversión_ciclos = sampling time + 12 cycles = 492
+
+tiempo_conversión_segundos = (1/2Mhz)*Tiempo_conversión_ciclos
+			   = (1/2Mhz)*181.5cycles = 90.75 uSec
