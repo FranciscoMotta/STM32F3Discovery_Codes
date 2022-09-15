@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"5_adc_continuo\stm32f3xx_hal_adc_ex.o"
+"5_adc_continuo\stm32f3xx_hal_pwr_ex.o"
+"5_adc_continuo\stm32f3xx_hal.o"
+"5_adc_continuo\stm32f3xx_hal_flash.o"
+"5_adc_continuo\stm32f3xx_hal_tim.o"
+"5_adc_continuo\stm32f3xx_hal_flash_ex.o"
+"5_adc_continuo\stm32f3xx_hal_i2c.o"
+"5_adc_continuo\stm32f3xx_hal_i2c_ex.o"
+"5_adc_continuo\stm32f3xx_hal_rcc_ex.o"
+"5_adc_continuo\stm32f3xx_hal_dma.o"
+"5_adc_continuo\stm32f3xx_hal_cortex.o"
+"5_adc_continuo\stm32f3xx_hal_adc.o"
+"5_adc_continuo\stm32f3xx_hal_gpio.o"
+"5_adc_continuo\stm32f3xx_hal_tim_ex.o"
+"5_adc_continuo\stm32f3xx_hal_rcc.o"
+"5_adc_continuo\stm32f3xx_hal_pwr.o"
+"5_adc_continuo\stm32f3xx_hal_msp.o"
+"5_adc_continuo\stm32f3xx_it.o"
+"5_adc_continuo\main.o"
+"5_adc_continuo\adc.o"
+"5_adc_continuo\gpio.o"
+"5_adc_continuo\system_stm32f3xx.o"
+"5_adc_continuo\startup_stm32f303xc.o"
+--library_type=microlib --strict --scatter "5_ADC_CONTINUO\5_ADC_CONTINUO.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "5_ADC_CONTINUO.map" -o 5_ADC_CONTINUO\5_ADC_CONTINUO.axf

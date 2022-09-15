@@ -39,6 +39,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "stm32f3xx_hal.h"
+#include "adc.h"
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
@@ -62,6 +63,8 @@ void SystemClock_Config(void);
 
 /* USER CODE BEGIN 0 */
 
+uint32_t valor_ADC = 0; // Variable de retorno del adc
+
 /* USER CODE END 0 */
 
 int main(void)
@@ -69,8 +72,6 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 
-	uint16_t leds_order[8] = {LED4_Pin, LED3_Pin, LED6_Pin, LED8_Pin, LED10_Pin, LED9_Pin, LED7_Pin, LED5_Pin};
-	uint8_t counter = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
@@ -91,8 +92,11 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_ADC1_Init();
 
   /* USER CODE BEGIN 2 */
+
+	HAL_ADC_Start(&hadc1); // Iniciamos el ADC
 
   /* USER CODE END 2 */
 
@@ -103,18 +107,7 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-		while(HAL_GPIO_ReadPin(PUSH1_GPIO_Port, PUSH1_Pin))
-		{
-			HAL_GPIO_TogglePin(GPIOE, leds_order[counter]);
-			counter++;
-			if (counter == 8)
-			{
-				counter = 0;
-			}
-			HAL_Delay(50);
-		}
-		counter = 0; 
-		HAL_GPIO_WritePin(GPIOE, (LED3_Pin | LED4_Pin | LED5_Pin | LED6_Pin | LED7_Pin | LED8_Pin | LED9_Pin | LED10_Pin), GPIO_PIN_RESET);
+		valor_ADC = HAL_ADC_GetValue(&hadc1); // Obtenemos el valor del ADC
   }
   /* USER CODE END 3 */
 
